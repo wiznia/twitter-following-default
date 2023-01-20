@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+"name": "Twitter Following Default",
+"description": "Defaults Twitter to 'Following' instead of 'For you'",
+"version": "1.0",
+"content_scripts":[
+    {
+      "matches":[
+        "http://twitter.com/*",
+        "https://twitter.com/*",
+        "https://www.twitter.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
